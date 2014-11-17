@@ -1,13 +1,14 @@
-# require 'spec_helper'
+require 'spec_helper'
 
-# feature "User browses the list of links" do
-# 	before(:each) {
-# 		Link.create(:url => "http://wee.makersacademy.com",
-# 					:title => "Makers Academy")
-# 	}
+feature "User browses the list of links" do
+	before(:each) {
+		Link.create(:url => "http://wee.makersacademy.com",
+					:title => "Makers Academy")
+	}
 
-# 	scenario "when opening the home page" do
-# 		visit '/'
-# 		expect(page).to have_content("Makers Academy")
-# 	end
-# end
+	scenario "when opening the home page" do
+		visit '/'
+		expect(page).to have_content("Makers Academy")
+	end
+
+end
