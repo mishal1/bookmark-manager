@@ -9,4 +9,6 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'launchy'
+  gem 'rack-flash3'
+  gem 'shotgun'
 end
