@@ -4,15 +4,10 @@ require './lib/user'
 require './lib/link'
 require './lib/tag'
 require 'rack-flash'
+require_relative 'data_mapper_setup'
 
 enable :sessions
 set :session_secret,  'super secret'
-
-env = ENV["RACK_ENV"] || "development"
-
-DataMapper.setup(:default, "postgres://localhost/bookmark_manager_#{env}")
-DataMapper.finalize
-DataMapper.auto_upgrade!
 
 use Rack::Flash 
 
