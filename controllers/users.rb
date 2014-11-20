@@ -29,7 +29,6 @@ post '/users/forgot_password' do
 	if user
 		user.password_token = (1..64).map{('A'..'Z').to_a.sample}.join
 		user.save
-		Email.send_simple_message('mishal.islam01@gmail.com',user.password_token)
 		erb :"users/sent_token"
 	else
 		flash.now[:notice]= "The email address is incorrect, please try again"
