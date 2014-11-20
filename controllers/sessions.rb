@@ -16,7 +16,7 @@ post '/sessions' do
 end
 
 delete '/sessions' do
-	flash[:notice]=["Goodbye!"]
-	session[:user_id]=nil
+	flash[:notice]= "Goodbye!"
+	session[:user_id]= nil
 	redirect to('/')
 end
