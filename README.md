@@ -1,6 +1,6 @@
 #Bookmark Manager
 
-Week 4 at Maker's Academy.
+Week 4 at Makers Academy.
 
 ##Context
 We built a bookmark manager, similar to pineapple.io or delicious.com in spirit. A bookmark manager is a good use case for exploring how relational databases work.
